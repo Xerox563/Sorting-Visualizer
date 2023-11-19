@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<link rel="shortcut icon" href="content/fav.svg" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css" />
+	<title>|| Sorting Visualizer ||</title>
+</head>
+
+<body>
+	<div class="spcl">
+		<h1 class="h1" style="color: #183024;">Rotate Your Phone </h1>
+		<div>
+			<img src="content/rotate.png" alt="Rotate Phone" width="50px">
+		</div>
+	</div>
+	<div class="root">
+		<header>
+			<a href="/" style="text-decoration: none;">
+				<p class="hd-txt"><strong>Sorting Visualizer</strong></p>
+			</a>
+		</header>
+
+		<div class="main-cnt">
+			<div class="menu">
+				<div class="othr-btns">
+					<div>
+						<input type="range" min="10" max="100" value="20" step="10" name="size" class="slider"
+							id="size" />
+					</div>
+					<div>
+						<label for="size" style="color: #395144;">Size</label>
+					</div>
+					<div>
+						<input type="range" min="10" max="410" value="60" step="50" name="speed" class="slider"
+							id="speed" />
+					</div>
+					<div>
+						<label for="speed" style="color: #395144;">Speed</label>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="random-array" type="button">
+							|Random Array|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="reversed-array" type="button">
+							|Reversed Array|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="sorted-array" type="button">
+							|Sorted Array|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm reload" id="reload">Reload</button>
+					</div>
+				</div>
+				<div class="srt-btn">
+					<div>
+						<button class="btn btn-sm btn-clr" id="bubble" type="button">
+							|Bubble Sort|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="selection" type="button">
+							|Selection Sort|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="insertion" type="button">
+							|Insertion Sort|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="merge" type="button">
+							|Merge Sort|
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="quick" type="button">
+							|Quick Sort|
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="bars-cnt" id="bars">
+				<!-- Bars -->
+			</div>
+
+		</div>
+		<footer class="py-3 border-top">
+			<div class="ftr">
+				<div>
+					<a href="/" class="mb-3 me-2 mb-md-0 text-body-primary text-decoration-none lh-1">
+						<i class="fa-solid text-dark fa-arrow-up-wide-short mr-2"></i>
+					</a>
+					<span class="mb-3 mb-md-0 ftr-txt">
+						🐿️ Amit Gangwar © 2023
+					</span>
+				</div>
+				<div>
+					<ul class="nav d-flex list-unstyled">
+
+						<li class="ms-3">
+							<a class="text-dark" href="https://github.com/Xerox563">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor
+							class=" bi bi-github" viewBox="0 0 16 16">
+									<path
+										d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="sorting.js"></script>
+	<script src="bubble.js"></script>
+	<script src="selection.js"></script>
+	<script src="insertion.js"></script>
+	<script src="merge.js"></script>
+	<script src="quick.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/8188a82202.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
