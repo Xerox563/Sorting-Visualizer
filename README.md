@@ -20,22 +20,4 @@ This project is a web-based sorting visualizer implemented using HTML, CSS, and 
 - **Speed Control**: Offers control over the speed of the visualization, enabling users to observe sorting algorithms at different speeds.
 - **Responsive Design**: Designed to be responsive, ensuring a consistent experience across various devices and screen sizes.
 
-- sorting-visualizer/
-├── index.html
-├── styles/
-│   ├── main.css
-│   └── ...
-├── scripts/
-│   ├── sortingAlgorithms/
-│   │   ├── bubbleSort.js
-│   │   ├── selectionSort.js
-│   │   ├── insertionSort.js
-│   │   ├── mergeSort.js
-│   │   ├── quickSort.js
-│   │   └── ...
-│   ├── visualization.js
-│   └── ...
-├── screenshots/
-│   └── sorting-visualizer.png
-├── LICENSE
-└── README.md
+
